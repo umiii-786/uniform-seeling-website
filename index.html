@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&family=Ubuntu:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="responsive.css">
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo2">
+            <img src="gentlemen.png" alt="logo2">
+        </div>
+        <nav CLASS="navbar">
+            <A href="#">HOME</A>
+            <A href="#services">SERVICES</A>
+            <A href="#about">ABOUT US</A>
+            <A href="#contact">CONTACT US</A>
+        </nav>
+        <div class="contact-link">
+            <input type="text">
+            <button class="btn-sm">Search</button>
+            <a href="#"><img src="Instagram-Icon.png" alt="instagram" id="img1"></a>
+            <a href="#"><img src="facebook logo.png" alt="facebook" id="img2"></a>
+        </div>
+
+    </header>
+    <div class="togle">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <main>
+        <section class="section1">
+            <div class="box1">
+                <h1 class="margin-top heading">WELCOME TO MY SHOP</h1>
+                <div class="margin-top intro right">
+                    <p class="para">"an easy way for parents and students to order from school canteens,from home,hostel
+                        to uniform shops to buy the uniforms and many other school services online like, GARMENT and
+                        stationary items on online."</p>
+                    <button class="btn margin-top">ORDER NOW</button>
+                </div>
+            </div>
+        </section>
+        <section class="section2" id="about">
+            <h1 class="margin-top heading">OWNER</h1>
+            <div class="owner-pic another-margin">
+                <img src="owner1.jpg" alt="owner">
+            </div>
+            <h2 class="name">MUHAMMAD UMAIR JATT...!</h2>
+            <div class="gmail"><A href='umiii215020@gmail.com'><img src="gmail.png" alt="gmail"></A><A
+                    href='umiii215020@gmail.com'>umiiijatt786@gmail.com</A></div>
+            <div class="margin-top another-margin">
+                <P id="umiii">HI UMAIR IS HERE! </P>
+                <P class="para ">ARE U looking to buy the garment or uniform for children ad men, so u are at the right
+                    place so order now and buy the high quality item. and i am also purchasing the stationary for boys
+                    and girl so don't be late.</P>
+            </div>
+        </section>
+
+        <h1 class="h1 newh1">SERVICES</h1>
+        <section class="section3" id="services">
+            <div class="garments box">
+                <h2>GARMENTS</h2>
+                <img src="garments.jpg" alt="garments">
+                <p class="service-para"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem sapiente
+                    aliquam nesciunt nostrum
+                    provident mollitia possimus eveniet beatae, corporis, maxime nihil doloribus odit amet laboriosam
+                    quam?
+                    Incidunt corrupti unde maxime eius ea rerum laudantium</p>
+            </div>
+            <div class="uniform box">
+                <h2>UNIFORMS</h2>
+                <img src="uniform.jpg" alt="uniform">
+                <P class="service-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem sapiente aliquam
+                    nesciunt nostrum
+                    provident mollitia possimus eveniet beatae, corporis, maxime nihil doloribus odit amet laboriosam
+                    quam?
+                    Incidunt corrupti unde maxime eius ea rerum laudantium.</P>
+            </div>
+            <div class="stationary box">
+                <h2>STATIONARY</h2>
+                <img src="stationary.jpg" alt="stationary">
+                <p class="service-para"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem sapiente
+                    aliquam nesciunt nostrum
+                    provident mollitia possimus eveniet beatae, corporis, maxime nihil doloribus odit amet laboriosam
+                    quam?
+                    Incidunt corrupti unde maxime eius ea rerum laudantium.</p>
+            </div>
+
+        </section>
+
+        <section class="section4 margin-top" id="contact">
+            <h1 class="hi2">CONTACT US</h1>
+            <div class="form">
+                <!-- <form action="action.php"> -->
+                <p>ENTER YOUR NAME</p>
+                <input type="text" id="name">
+                <p>ENTER YOUR EMAIL</p>
+                <input type="email" id="email">
+                <P>ENTER YOUR NUMBER</P>
+                <input type="NUMERIC" id="numeric">
+                <p>ENTER YOUR ADDRESS</p>
+                <input type="alphanumeric" id="alphanumeric">
+                <P>CHOOSE YOUR COUNTRY NAME</P>
+                <input type="text" id="country">
+                <P>ENTER YOUR FEEDBACK</P>
+                <textarea ID="FEEDBACK" rows="7">
+
+                </textarea>
+                <!-- </form> -->
+                <button class="submit">submit</button>
+            </div>
+        </section>
+    </main>
+    <button class="cancel">X</button>
+    <footer>
+        <P> copyright &copy; www.newgarment.com All right reserved</P>
+    </footer>
+
+    <script>
+        let header = document.querySelector('#header');
+        let logo = document.querySelector('.logo2');
+        let navbar = document.querySelector('.navbar')
+        let contact = document.querySelector('.contact-link')
+        let cancel = document.querySelector('.cancel');
+        let burgur = document.querySelector('.togle')
+        console.log(burgur);
+        burgur.addEventListener('click', show);
+        function show() {
+            header.style.height = "60vh";
+            logo.style.display = "flex";
+            navbar.style.display = 'flex';
+            contact.style.display = 'flex';
+            burgur.style.display = "none";
+            cancel.style.display = "block";
+        }
+        cancel.addEventListener('click',remove);
+        function remove(){
+            header.style.height = "20vh";
+            logo.style.display = "none";
+            navbar.style.display = 'none';
+            contact.style.display = 'none';
+            burgur.style.display = "block";
+            cancel.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

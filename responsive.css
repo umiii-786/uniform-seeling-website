@@ -1,0 +1,103 @@
+@media only screen and (max-width:1080px) {
+    .togle {
+        display: block;
+    }
+
+     #header {
+        flex-direction: column;
+        width: 100%;
+        height: 20vh;
+        /* height: 60vh; */
+    }
+
+
+    .heading {
+        font-size: 33px;
+    }
+
+    .para {
+        width: 70%;
+
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+
+    .navbar a {
+        padding-top: 20px;
+    }
+
+    .logo2 img {
+        width: 70px;
+        padding-left: 40px;
+        padding-top: 140px;
+        display: none;
+    }
+
+    .contact-link #img1 {
+        position: absolute;
+        top: 10px;
+        right: 70px;
+        /* display: block; */
+    }
+
+    .contact-link #img2 {
+        position: absolute;
+        top: 10px;
+        right: 120px;
+        /* display:block */
+    }
+
+    .contact-link input {
+        padding: 7px 8px;
+    }
+
+    .contact-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        display: none;
+    }
+
+    .section3 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 200vh;
+    }
+
+    .section4 {
+        height: 100vh;
+    }
+
+    .box {
+        max-width: 870px;
+        height: 65vh;
+    }
+
+    .newh1 {
+        width: 140px;
+    }
+
+    .section1 {
+        height: 85vh;
+    }
+
+    .section2 {
+        height: 100vh;
+    }
+
+    .btn-sm {
+        width: 100px;
+        padding: 7px;
+        margin-top: 10px;
+    }
+
+}
